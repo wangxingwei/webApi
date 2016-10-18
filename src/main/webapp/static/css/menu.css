@@ -1,0 +1,53 @@
+*{border:none;margin:0;padding:0;box-sizing:border-box;}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0px; 
+}
+ul li{list-style:none;} 
+a{text-decoration: none;}
+.nav-down {
+    position:relative;
+    width: 100%;
+    height:auto;
+    background-color:#f8f8f8;
+
+}
+.nav-menu{    
+	z-index: 1;
+    position: absolute;
+    width: 220px;
+   background-color: #f8f8f8;
+    height:100%;
+    overflow:auto;
+
+
+}
+/*html[data-useragent*='MSIE 10.0'] .nav-menu {
+    margin-top:61px;
+}*/
+.nav-menu ul li ul{padding-left:15px;background-color:#fcfcfc;display:none;}
+.nav-menu ul li a{position: relative;
+    display: inline-block;
+    padding:10px 15px;
+    color:#337ab7;
+    text-decoration: none;
+}
+.nav-menu ul li ul li a{border:0px solid #ccc;font-size:14px;}
+.nav-menu ul li ul li a:hover{color:#000;} 
+.nav-menu ul li ul li {border:none;}
+.nav-menu ul li {
+	font-size:15px;
+	border-bottom: 1px solid #ddd;
+	position:relative;
+}
+.nav-menu ul li .arrow{float:right;padding:10px 15px;
+    color:#337ab7;cursor:pointer;}
+
+.side_menu ul{display:none;}
+.side_menu .arrow{float:right;}/*color:#337ab7;*/
+.leftmenu2{ float:left; width:52px; overflow:auto;height:100%; position:absolute; background:#424f63;left:-192px;background-color:#f8f8f8;}
+.leftmenu2 .menu-oc1{ position:absolute; margin-left:0px; cursor:pointer;}
+.leftmenu2 ul{ float:left; width:52px; height:auto}
+.leftmenu2>ul>li{ width:52px; float:left; height:auto; position:relative}
+
+

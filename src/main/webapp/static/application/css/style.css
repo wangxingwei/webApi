@@ -1,0 +1,11 @@
+*{margin:0;padding:0;border:none;}
+body{
+  font-family: 'Open Sans';font-size:14px;}
+a,a:hover{text-decoration:none;cursor:pointer;}
+ul li{list-style-type:none;}
+.page-container{width:96%;margin:0 auto;}
+.txt_center{text-align:center;}
+.form-title{font-size:20px;font-weight:bold;}
+#startdate,#enddate{height:34px;}
+.font20{font-size:20px;}
+.margin_top10{margin-top:10px;}

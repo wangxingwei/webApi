@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/util 
+		http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<!-- @Controller 声明Action组件 @Service 声明Service组件 @Service("myMovieLister") 
+		@Repository 声明Dao组件 @Component 泛指组件, 当不好归类时. @RequestMapping("/menu") 请求映射 
+		@Resource 用于注入，(j2ee提供的 ) 默认按名称装配，@Resource(name="beanName") @Autowired 用于注入，(spring提供的) 
+		默认按类型装配 @Transactional( rollbackFor={Exception.class}) 事务管理 @ResponseBody 
+		@Scope("prototype") 设定bean的作用域 -->
+
+	<!-- 扫描框架以及业务组件(Controller在MVC模块中单独调用scan) -->
+	<context:component-scan base-package="com.apidoc">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+	
+</beans>

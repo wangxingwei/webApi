@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project2>
+	<!-- 接口ID -->
+	<interfaces id="3">
+	    <!-- 接口简述 -->
+		<state>接口3</state>
+		<!-- url_explain:接口详细说明, 内容:接口地址-->
+		<url url_explain="URL">localhost:8080/ApiDoc/conduct/conductRequest.do</url>
+		<!-- url_explain:请求说明, 内容:请求方式-->
+		<req req_explain="请求方式">GET</req >
+		<!-- url_explain:入参实例, 内容:json -->
+		<param param_explain="参数">[{"name":"张三","age":20},{"name":"张三","age":20}]</param>
+		<!-- url_explain:入参参数说明, 内容:json-->
+		<paramstate paramstate_explain="入参参数说明">[{"name":"名字","age":"年龄"}]</paramstate>
+		<!-- url_explain:出参参数说明, 内容:json-->
+		<code code_explain="出参参数说明">[{"0":"成功"},{"1":"失败"}]</code>
+	</interfaces>
+	<interfaces id="4">
+		<!-- 接口简述 -->
+		<state>接口4</state>
+		<!-- url_explain:接口详细说明, 内容:接口地址-->
+		<url url_explain="URL">localhost:8080/ApiDoc/conduct/conductRequest.do</url>
+		<!-- url_explain:请求说明, 内容:请求方式-->
+		<req req_explain="请求方式">POST</req >
+		<!-- url_explain:入参实例, 内容:json -->
+		<param param_explain="参数">[{"name":"张三","age":20},{"name":"张三","age":20}]</param>
+		<!-- url_explain:入参参数说明, 内容:json-->
+		<paramstate paramstate_explain="入参参数说明">[{"name":"名字","age":"年龄"}]</paramstate>
+		<!-- url_explain:出参参数说明, 内容:json-->
+		<code code_explain="出参参数说明">[{"0":"成功"},{"1":"失败"}]</code>
+	</interfaces>
+</project2>

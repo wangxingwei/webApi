@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 项目 -->
+<cashdesk>
+	<!-- list -->
+	<interfaces id="1">
+		<!-- 接口简述 -->
+		<state>流水接口</state>
+		<!-- url_explain:接口详细说明, 内容:接口地址 -->
+		<url url_explain="URL">/ApiDoc/page/getPersonList.do</url>
+		<!-- url_explain:请求说明, 内容:请求方式 -->
+		<req req_explain="请求方式">GET</req>
+		<!-- url_explain:入参实例, 内容:json -->
+		<param param_explain="参数">{
+			"oper":"save",
+			"type":"upload",
+			"source":"MPOS",
+			"para":{"key":"2016082618352445DBF5","saleFlow":[
+			{
+			"id": "352f6b2f278e430f913f1d5769876110",
+			"create_date": "2016-10-09
+			14:43:05",
+			"modify_date": "2016-10-09 14:43:05",
+			"acc_num": "0",
+			"batch_no": "",
+			"branch_no": "165838",
+			"brand_rate": "0.00",
+			"card_id":
+			"",
+			"card_no": "",
+			"clss_rate": "0.00",
+			"com_flag": "0",
+			"com_no": "0",
+			"cost_price": "0.00",
+			"dec_rate": "0.00",
+			"flow_id": "1",//新（档案）的商品
+			"source":"MPOS",//来源
+			"flow_no": "10000067201610090001",
+			"in_price":
+			"0.00",
+			"item_no": "6916196423858",
+			"memo": "",
+			"oper_date": "2016-10-09
+			14:43:05",
+			"passel_no": "",
+			"oper_id": "15011585517",
+			"pref_amt":
+			"0.00",
+			"pro_id": "0.00",
+			"sale_duty_rate": "0.00",
+			"sale_man": "9999",
+			"sale_money": "5.00",
+			"sale_price": "5.00",
+			"sale_qnty": "1.000",
+			"sale_rate": "0.00",
+			"sale_type": "POS",
+			"sale_way": "A",
+			"shift_no":
+			"",
+			"source_price": "5.00",
+			"spec_flag": "",
+			"voucher_no": "",
+			"flag":"1",
+			"voucher_id": "0",
+			"com_flag_date": "0001-01-01 00:00:00"
+
+			},
+			{
+			"id": "db3fd0e86f0c436d914e7499c566f410",
+			"create_date":
+			"2016-10-09 14:43:05",
+			"modify_date": "2016-10-09 14:43:05",
+			"acc_num": "0",
+			"flag":"2",
+			"batch_no": "",
+			"branch_no": "165838",
+			"brand_rate": "0.00",
+			"card_id": "",
+			"card_no": "",
+			"clss_rate": "0.00",
+			"com_flag": "0",
+			"com_no": "0",
+			"cost_price": "0.00",
+			"dec_rate":
+			"0.00",
+			"flow_id": "2",//自己原有的商品
+			"old_product_name":"不知道叫啥", //原有的名字
+			"old_product_sub_no":"698754321",//原有69码
+			"old_product_inprice":"1000",//原有的进价
+			"old_produtct_saleprice":"10",//原有的售价
+			"old_prodcuct_salecount":"1",//原有的数量
+			"source":"MPOS", //来源
+			"flow_no":
+			"10000067201610090001",
+			"in_price": "0.00",
+			"item_no": "6916196423834",
+			"memo": "",
+			"oper_date": "2016-10-09 14:43:05",
+			"passel_no": "",
+			"oper_id": "15011585517",
+			"pref_amt": "0.00",
+			"pro_id": "0.00",
+			"sale_duty_rate": "0.00",
+			"sale_man": "9999",
+			"sale_money": "5.00",
+			"sale_price": "5.00",
+			"sale_qnty": "1.000",
+			"sale_rate": "0.00",
+			"sale_type": "POS",
+			"sale_way": "A",
+			"shift_no": "",
+			"source_price":
+			"5.00",
+			"spec_flag": "",
+			"voucher_no": "",
+			"voucher_id": "0",
+			"com_flag_date": "0001-01-01 00:00:00"
+
+			}
+			]}
+			}
+		</param>
+		<!-- url_explain:入参参数说明, 内容:json -->
+		<paramstate paramstate_explain="入参参数说明">[{"id":"",
+			"csid":"client端销售流水主键",
+			"create_date":"创建时间",
+			"modify_date":"修改时间",
+			"acc_num":"积分",
+			"batch_no":"",
+			"brand_rate":"品牌折扣率",
+			"card_id":"会员卡ID",
+			"card_no":"会员卡号",
+			"clss_rate":"类别折扣率",
+			"com_flag":"上传标识",
+			"com_no":"",
+			"cost_price":"成本价",
+			"dec_rate":"扣率",
+			"flow_id":"标志号",
+			"flow_no":"销售流水号",
+			"in_price":"进价金额",
+			"item_no":"货号",
+			"memo":"备注",
+			"oper_date":"操作时间",
+			"passel_no":"NULL","oper_id":"操作员ID","pref_amt":"优惠金额",
+			"pro_id":"区别号",
+			"sale_duty_rate":"默认为0",
+			"sale_man":"营业员默认9999",
+			"sale_money":"销售金额",
+			"sale_price":"销售价",
+			"sale_qnty":"销售数量","sale_type":"销售平台(WX、APP、PC、POS)","sale_way":"销售方式(A销售,B退货，C赠送)",
+			"shift_no":"促销单号",
+			"source_price":"原价(1.折扣或者优惠情况下，记录原价)",
+			"spec_flag":"特价标志(1：特价：0：非特价)",
+			"voucher_no":"退货使用： 对应flow_no",
+			"voucher_id":"退货使用： 对应flow_id",
+			"com_flag_date":"上传日期",
+			"old_product_name":"旧商品名称",
+			"old_product_sub_no":"旧商品条码",
+			"old_product_inprice":"旧商品进价",
+			"old_produtct_saleprice":"年龄",
+			"old_prodcuct_salecount":"旧商品销售数量",
+			"source":"来源"
+			}
+			]
+		</paramstate>
+		<!-- url_explain:出参参数说明, 内容:json -->
+		<code code_explain="出参参数说明">[{"0":"成功"},{"1":"失败"}]</code>
+	</interfaces>
+	<interfaces id="2">
+		<!-- 接口简述 -->
+		<state>接口2</state>
+		<!-- url_explain:接口详细说明, 内容:接口地址 -->
+		<url url_explain="URL">/ApiDoc/page/getPersonList.do
+		</url>
+		<!-- url_explain:请求说明, 内容:请求方式 -->
+		<req req_explain="请求方式">POST</req>
+		<!-- url_explain:入参实例, 内容:json -->
+		<param param_explain="参数">
+[
+	{
+	"name": "张三",
+	"age": 20
+	},
+	{
+	"name": "张三",
+	"age": 20
+	}
+]
+		</param>
+		<!-- url_explain:入参参数说明, 内容:json -->
+		<paramstate paramstate_explain="入参参数说明">[{"name":"名字","age":"年龄"}]
+		</paramstate>
+		<!-- url_explain:出参参数说明, 内容:json -->
+		<code code_explain="出参参数说明">[{"0":"成功"},{"1":"失败"}]</code>
+	</interfaces>
+</cashdesk>
